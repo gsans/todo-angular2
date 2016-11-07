@@ -5,8 +5,6 @@ import { HttpModule } from '@angular/http';
 import { ENV_PROVIDERS } from './environment';
 import { AppComponent } from './app.component';
 
-import { ApolloModule } from 'angular2-apollo';
-
 import {AddTodo} from './addTodo';
 import {Todo} from './todo';
 import {TodoList} from './todoList';
@@ -18,7 +16,7 @@ import {createStore} from 'redux';
 import {rootReducer} from './rootReducer';
 import {TodoActions} from './todoActions';
 
-//import { defaultApolloClient, APOLLO_PROVIDERS } from 'angular2-apollo';
+import { ApolloModule } from 'angular2-apollo';
 import { client } from './client';
 
 const appStore = createStore(rootReducer);
